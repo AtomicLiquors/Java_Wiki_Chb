@@ -41,7 +41,7 @@ Doing so is called an explicit constructor invocation.
 Here's another Rectangle class,   
 with a different implementation from the one in the Objects section. 
 
-'''
+
 public class Rectangle {
     private int x, y;
     private int width, height;
@@ -60,7 +60,7 @@ public class Rectangle {
     }
     ...
 }
-'''
+
 This class contains a set of constructors.   
 Each constructor initializes some or all of the rectangle's member variables. 
 The constructors provide a default value for any member variable whose initial value is not provided by an argument. 
