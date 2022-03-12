@@ -83,3 +83,27 @@
     }
     ```
     
+      
+      
+상속 시 생성자  
+
+
+```
+package ch04;
+
+class SuperClass5{
+	SuperClass5(int i){}
+}
+
+class SubClass5 extends SuperClass5{
+
+	SubClass5(int i) {
+		super(i);
+	}
+	
+}
+
+public class ConstructorEx5{
+	
+}
+```
