@@ -1,3 +1,31 @@
+"매개변수로 입력된 변수명과 필드로 선언된 변수명이 동일하면, 필드의 변수는 앞에 this를 사용한다."  
+
+```
+package ch04;
+
+public class ThisEx {
+	
+	String name;
+	int age;
+
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
+}
+
+```
+
 ### Using the this Keyword
 Within an instance method or a constructor, this is a reference to the current object — the object whose method or constructor is being called. You can refer to any member of the current object from within an instance method or a constructor by using this.
 
