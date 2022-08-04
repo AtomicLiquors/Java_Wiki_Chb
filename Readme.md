@@ -2,6 +2,7 @@
 ### 모델 :
 - [김남윤(Cheese10Yun)님의 TIL 저장소](https://github.com/cheese10yun/TIL)
 - [주석 및 편의기능](https://github.com/AtomicLiquors/Java_Wiki_Chb/blob/main/0.%EC%A3%BC%EC%84%9D_%EB%B0%8F_%ED%8E%B8%EC%9D%98%EA%B8%B0%EB%8A%A5/eclipse.md)
+- 메인으로(https://github.com/AtomicLiquors/Java_Wiki_Chb/blob/main/Readme.md)
 
 - 더블클릭 > alt shitf T(Refactor) > Rename ‘변수명 동시에 바꾸기”
     
