@@ -1,7 +1,6 @@
 ## JAVA 노션 학습내용을 깃허브로 포팅하기 시작합니다. 
-### 사유:
-- 토글 방식이 아닌 디렉토리를 이용한 간편한 조회
-(2022.03.06 부)
+### 모델 :
+- [김남윤(Cheese10Yun)님의 TIL 저장소](https://github.com/cheese10yun/TIL)
 
 - 더블클릭 > alt shitf T(Refactor) > Rename ‘변수명 동시에 바꾸기”
     
@@ -29,7 +28,7 @@ ___
 리드미파일에 카테고리를 나눈다.
 자바 백엔드 개발자가 되실 분들은 이 저장소를 다 보시기 바랍니다.
 
-1. [김남윤(Cheese10Yun)님의 TIL 저장소](https://github.com/cheese10yun/TIL)
+1. 
 2. [HomoEfficio님의 문제해결 저장소](https://github.com/HomoEfficio/dev-tips)
 3. [김남준(namjunemy)님의 TIL 저장소](https://github.com/namjunemy/TIL)
 4. [진유림(milooy)님의 TIL 저장소](http://milooy.github.io/TIL/)
