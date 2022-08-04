@@ -1,22 +1,27 @@
+[<< 메인으로](https://github.com/AtomicLiquors/Java_Wiki_Chb/blob/main/Readme.md)
 
 ### 주석 및 IDE 편의기능
 
 - 주석 : //, /* */
 
-**이클립스 편의기능**
+### 이클립스 편의기능
+
+이클립스 : IDE. 기본적으로 비영리 단체고 점유율로 승부한다.
 
 - 블록 주석
     - // : ctrl + /, 다시 단축키로 주석해제 가능
     - /* : ctrl + shift + /, 단축키로 주석해제 불가능
-- **클래스 다이어그램**
+
+- ~~클래스 다이어그램~~
     
-    플러그인 설치 후 new > other >
+    ~~플러그인 설치 후 new > other >
     java 파일을 끌어오면 어떤 클래스를 이용했는지 도식적으로 보여준다.
-    이는 ppt에도 매우 유용하다.
+    이는 ppt에도 매우 유용하다.~~  
+    지원이 끊겼다는데 대체재 확인바람. 
     
 - 드롭다운 메뉴를 펼쳐서 실행된 파일이 어떤 파일인지 확인할 수 있다.
     
-    ![ffff.png](Java%202da56/ffff.png)
+    
     
     만약에 main함수를 안 썼거나 해서 엉뚱한 파일이 실행된 경우,
     그 파일이 어떤 파일인지 확인할 수 있다.
@@ -34,6 +39,8 @@
 
 - 변수명 동시에 변경 : alt shift R
 
+- 더블클릭 > alt shitf T(Refactor) > Rename ‘변수명 동시에 바꾸기”
+    
 사용자 지정 자동완성 
 
 Window > Preference > Java > Editor > Templates
