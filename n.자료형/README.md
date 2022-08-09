@@ -15,14 +15,16 @@
 #### 기본형 *Primitive type* 
  - 실제 데이터를 저장한다.
  - 8가지 종류가 해당한다. 
-    - boolean
-    - char 
-    - byte, short, int, long, 
+    - 논리형 : boolean
+    - 문자형 : char 
+    - 실수형 : byte, short, int, long, 
     - float, double. 
     &nbsp;  
 #### 참조형 *Reference Type*
   - 어떤 데이터가 저장된 주소를 값으로 갖는다.
   - Java에서는 위 기본형 8가지를 제외한 나머지가 참조형에 해당한다.
+  - Java에서는 위 기본형 8가지를 제외한 나머지가 모두 참조형에 해당한다.
+  
 
 [!] Java는 C언어와 달리 참조형 변수 간의 연산을 할 수 없다. 
 실제 연산에 사용되는 것은 모두 기본형 변수다.
@@ -35,6 +37,8 @@
 ```jsx
 Date today = new Date(); //Date 객체를 생성하여, 그 주소를 today에 저장한다.
 ```
+
+
 
 Q. 자료형과 타입의 차이가 뭔가요?
 
