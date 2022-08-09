@@ -1,4 +1,4 @@
-## JAVA Wiki
+## JAVA Wiki by AtomicLiquors  
 - [기본]
 - [상식]
 - [자료형](https://github.com/AtomicLiquors/Java_Wiki_Chb/tree/main/n.%EC%9E%90%EB%A3%8C%ED%98%95)
