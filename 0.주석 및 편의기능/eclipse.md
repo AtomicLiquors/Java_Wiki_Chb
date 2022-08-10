@@ -41,6 +41,15 @@
 ### 사용자 지정 자동완성 
 
 Window > Preference > Java > Editor > Templates
+&
+##### 지정해두면 좋은 구문
+- ss -> System.out.println();
+- bfr -> BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+br.close();
+- bfw -> BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+bw.write( );
+bw.flush();
+bw.close();
 
 ### 한글 세팅 : 
 
