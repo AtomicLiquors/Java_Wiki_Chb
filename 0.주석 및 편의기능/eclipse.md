@@ -44,11 +44,11 @@ Window > Preference > Java > Editor > Templates
 &
 ##### 지정해두면 좋은 구문
 - ss -> System.out.println();
-- bfr -> BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+- bfr -> BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\n
 br.close();
-- bfw -> BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-bw.write( );
-bw.flush();
+- bfw -> BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));\n
+bw.write( );\n
+bw.flush();\n
 bw.close();
 
 ### 한글 세팅 : 
