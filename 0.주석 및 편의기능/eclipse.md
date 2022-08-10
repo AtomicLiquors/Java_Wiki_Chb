@@ -1,10 +1,7 @@
 [<< 메인으로](https://github.com/AtomicLiquors/Java_Wiki_Chb/blob/main/Readme.md)
+# [0.주석 및 편의기능](https://github.com/AtomicLiquors/Java_Wiki_Chb/blob/main/0.%EC%A3%BC%EC%84%9D%20%EB%B0%8F%20%ED%8E%B8%EC%9D%98%EA%B8%B0%EB%8A%A5/README.md)
 
-### 주석 및 IDE 편의기능
-
-- 주석 : //, /* */
-
-### 이클립스 편의기능
+## 이클립스 편의기능
 
 이클립스 : IDE. 기본적으로 비영리 단체고 점유율로 승부한다.
 
