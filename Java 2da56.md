@@ -1,90 +1,13 @@
 # Java
-
-
 ___
 
 새 클래스 생성할 때 superclass 란에 패키지명.클래스명을 기입해  
 상위클래스를 미리 설정할 수 있다.
 
-System.exit(0); //정상종료  
-System.exit(1); //비정상종료 입니다.
-
-사실 단일프로그램에서 종료 0은 의미가 없어요.  
-복합적으로 만들면 하나가 종료될 때 다른 프로그램에 매개변수로 0 또는 1이 넘어갑니다.
-
-
 
  if문의 실행문 코드가 한 줄이면 중괄호는 생략가능하다.
 
-- EventEx
-    
-    ```jsx
-    package ch09;
-    
-    import java.awt.BorderLayout;
-    import java.awt.Button;
-    import java.awt.event.ActionEvent;
-    import java.awt.event.ActionListener;
-    /*버튼을 클릭하면 발생되는 이벤트객체는 ActionEvent이다.
-     * 이벤트소스(Button)랑 이벤트객체(ActionEvent)를 연결하기 위한 
-     * 이벤트 리스너는 XXXListener -> ActionListener 인터페이스를 구현*/
-    
-    public class EventEx1 extends MFrame implements ActionListener{
-    	
-    	Button btn;
-    	
-    	public EventEx1() {
-    		add(btn = new Button("버튼"),BorderLayout.SOUTH);
-    		//이벤트 소스랑 이벤트리스너 연결은 addXXXListener
-    		//this(내자신): 내 클래스에 XXXListener 구현
-    		btn.addActionListener(null);
-    	}
-    	
-    	@Override
-    	public void actionPerformed(ActionEvent e) {
-    		setBackground(MColor.rColor());
-    	}
-    	
-    	
-    	public static void main(String[] args) {
-    		new EventEx1();
-    	}
-    
-    }
-    ```
-    
-    ```jsx
-    package ch09;
-    
-    import java.awt.BorderLayout;
-    import java.awt.Button;
-    import java.awt.event.ActionEvent;
-    import java.awt.event.ActionListener;
-    
-    public class EventEx2 extends MFrame{
-    //버튼을 누르면 색이 바뀌는 예제다.
-    
-    	Button btn;
-    	
-    	public EventEx2() {
-    		add(btn = new Button("버튼"), 
-    				BorderLayout.SOUTH);
-    		btn.addActionListener(new ActionListener() {
-    
-    			@Override
-    			public void actionPerformed(ActionEvent e) {
-    				setBackground(MColor.rColor());
-    			}
-    			
-    		});
-    	}
-    	
-    	public static void main(String[] args) {
-    		new EventEx2();
-    	}
-    
-    }
-    ```
+
     
 
 - 개념
