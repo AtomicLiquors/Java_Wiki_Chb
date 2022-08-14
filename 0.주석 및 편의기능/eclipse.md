@@ -58,13 +58,3 @@ Window > Preference > workspace > Text file enconding → others(UTF-8)
 
 Window > Preference > Spelling > Encoding → UTF-8
 
-### 환경 설정
-
-
-> 
-> - Troubleshooting
->     - “가상 머신을 찾을 수 없다.”
->     
->     [https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=siren258&logNo=220429528361](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=siren258&logNo=220429528361)
->     
->
