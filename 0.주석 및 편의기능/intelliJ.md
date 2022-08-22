@@ -4,7 +4,7 @@
 - 훨씬 다양한 리팩토링과 디버깅
 - 이클립스 Git에 비해 훨씬 높은 자유도
 - 프로젝트 시작 시 인덱싱 : 빠른 검색 속도
-- HTML CSS JS XML 강력 지원
+- _HTML CSS JS XML 강력 지원_ - 커뮤니티 버전은 해당 없음.
 - Java, SpringBoot 버전업에 맞춘 빠른 업데이트
 
 &nbsp;  
