@@ -1,0 +1,3 @@
+- .containskey  
+- .get
+- .put
