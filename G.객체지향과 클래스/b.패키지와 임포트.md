@@ -41,7 +41,14 @@ c:\jdk1.8\work>javac -d . PackageTest.java
 자바의 정석 1권 337페이지.
 
 # import
-설명 생략.
+같은 패키지에 속해 있지 않은 클래스는 반드시 "import"를 받아야 한다. 
+java.lang.*에 해당되는 클래스의 경우 import 없이도 쓸 수 있는데, 
+이는 import가 생략된 것이다
+
+```
+String, System, Math, Integer... 등이 이에 해당한다.
+```
+
 ## static import
 static 멤버를 호출할 때 사용한다.
 ```java
