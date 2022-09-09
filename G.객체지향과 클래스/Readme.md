@@ -4,3 +4,316 @@
 완전한 객체지향 언어로 여겨지지 않는다.  
 
 대신 더 높은 성능을 얻을 수 있다.
+
+
+
+
+가령 String은 java.lang.이란 패키지에 속한 클래스다.
+
+개발자가 패키지명을 다르게 선언해서 String클래스를 선언할 수 있다.
+
+//같은 패키지를 제외한 클래스는 반드시 "import"를 받아야 한다.
+[//java.lang](https://java.lang/).*에 해당되는 클래스는 import 없이도 쓸 수 있는데, 이는 import가 생략된 것.
+
+해당되는 클래스 : String, System, Math, Integer....
+
+중요 :
+
+SUN에서 제공되는 클래스가 아닌, 
+**타회사가 만든 클래스의 패키지명은 도메인을 거꾸로 선언한다.**
+왜? Unique : 유일하게 만들어주기위해서
+
+→  이 얘기는 교재에 안 나온다.
+
+[naver.com](http://naver.com) → date ⇒ com.naver.Date
+
+[daum.net](http://daum.net) → date ⇒ net.daum.Date
+
+SUN → java.sql.Date, java.util.Date
+
+같은 클래스명을 사용하면 패키지명. 클래스 → 풀네임으로 사용
+
+
+
+    
+- 지정자
+
+**접근 지정자**
+
+private : 주택 화장실. 외부로부터 완벽 차단
+protected : 아파트 전용 화장실 
+“상속을 하면 사용 가능, 동일한 패키지도 사용 가능”
+public : 공중화장실. 모든 클래스에 허용
+default(접근지정자 생략) : 동일 패키지에 허용
+
+
+
+
+### 객체 프로그래밍
+
+생성자 > this > super > 상속 개념이 연결되어 있다.
+
+- **생성자**
+    
+    
+- 메소드 오버라이딩
+
+```jsx
+package ch05;
+
+class A1{
+    void prn1() {}
+    void prn2(String name) {}
+}
+
+class B1 extends A1{
+    @Override
+    void prn1() {
+        super.prn1(); //부모의 메소드를 호출하고, 추가적으로 기능을 넣는 경우
+    }
+    
+    @Override
+    void prn2(String name) {}//처음부터 재정의하는 경우
+    void prn3() {}
+}
+
+public class OverrideEx1 {
+
+}
+```
+
+```jsx
+package ch05;
+
+class Animal{
+    void move() {
+        System.out.println("동물아 움직여라~~~~");
+    }
+}
+
+//애니멀 상속받고 메소드 오버라이딩.
+class Bird extends Animal{
+    void move() {
+        System.out.println("날아라~");
+    }
+}
+class Fish extends Animal{
+    void move() {
+        System.out.println("헤엄쳐라~");
+    }
+}
+
+class Cheetah extends Animal{
+    void move() {
+        System.out.println("달려라~");
+    }
+}
+
+public class OverrideEx2 {
+    public static void main(String[] args) {
+        Animal ani[] = new Animal[3];
+        //new가 있어서 헷갈릴 수 있는데 Animal 객체를 만든 게 아니고, 배열을 3개 만든 것.
+        ani[0] = new Bird();
+        ani[1] = new Fish();
+        ani[2] = new Cheetah();
+        
+        
+        for (int i = 0; i < ani.length; i++) {
+            ani[i].move();
+        }
+        //동적 바인딩 : 동적으로 하위 클래스의 오버라이딩 된 메소드를 호출했다.
+        //어떤 메소드에 매개변수로 하위 클래스가 들어올 때 동적으로 메소드를 호출하는 목적이다.
+    }
+}
+```
+
+- 추상 클래스, 인터페이스
+
+문법은 비슷하지만, 전혀 다릅니다.
+
+우리가 직접 만들 일은 없지만, 
+SUN에서 제공하는 등 기존에 있는 것을 갖다 쓸 일은 많다.
+
+그러려면? 원리를 이해하고 갖다 쓸 줄을 알아야지.
+
+**추상 클래스**
+
+객체를 만들 수 없는 클래스.
+상속을 해서 
+
+```jsx
+package ch05;
+
+//추상 클래스 선언
+abstract class Abstract1{
+    //추상메소드 : 추상클래스를 상속받는 클래스는 "강제"적으로 오버라이딩해야 한다. 이해보다는 일단 인지를 합시다.
+    abstract void prn(); //선언부만 존재
+}
+
+class Normal1 extends Abstract1{
+    @Override
+    void prn() {
+    }
+    //추상클래스를 상속받는 틀만 만들어 놓으면 에러가 뜬다.
+    //오버라이딩을 시켜야 에러가 사라진다.
+    //ctrl space를 누르면 제일 먼저 오버라이딩부터 뜬다.
+}
+
+public class AbstractEx1 {
+
+    public static void main(String[] args) {
+        //Abstract1 a = new Abstract1(); -> 불가능
+        Abstract1 a;
+        Normal1 n = new Normal1();
+        a = n; //*이처럼 상위클래스 변수는 하위클래스 변수 참조 가능
+    }
+    
+}
+```
+
+```jsx
+package ch05;
+
+abstract class Abstract2{
+    abstract void prn();
+}
+
+abstract class Abstract2_1 extends Abstract2{
+    abstract void prn2();
+}
+
+class Normal2 extends Abstract2_1{
+
+    @Override
+    void prn2() {
+    }
+
+    @Override
+    void prn() {
+    }
+    
+}
+
+public class AbstractEx2 {
+
+    public static void main(String[] args) {
+
+    }
+
+}
+```
+
+편의기능 : 추상 클래스를 상속받는 클래스가 비어있으면 앞에 에러가 뜰 것이다.
+
+x 아이콘을 클릭해서 Add implemented class로 필요한 오버라이드 메소드들을 한꺼번에 추가할 수있다.
+
+인터페이스 
+
+인터페이스 역시 .java 파일인데, 아이콘에 보라색 ”I” 마크가 붙는다.
+
+인터페이스는 협업에 필요한 서로간의 약속이라는 의의를 갖는다.
+
+```jsx
+package ch05;
+
+interface Calcu{
+    //인터페이스 안에 선언되는 메소드는 abstract를 달지 않아도 추상 메소드
+    void prn(int a, int b);
+}
+
+//implements : 구현 
+class Function2 implements Calcu {
+
+    @Override
+    public void prn(int a, int b) {
+    } //인터페이스를 implement한 클래스는 반드시 메소드를 오버라이드해야 한다.
+    
+}
+
+class Graphics2 implements Calcu{
+
+    @Override
+    public void prn(int a, int b) {
+    }
+    
+}
+
+public class interfaceEx1 {
+
+    public static void main(String[] args) {
+        
+    }
+
+}
+```
+
+다중 상속이 안 된다는 자바의 특성상
+
+인터페이스를 활용해 다중 상속을 하기도 한다.
+
+- 익명 클래스 : 리스너와 연관됩니다.
+
+```jsx
+package ch05_1;
+
+//인터페이스를 선언합니다.
+interface MyInter{
+    void prn();
+}
+
+public class AnonymousEx1 {
+
+    public static void main(String[] args) {
+        //인터페이스는 타입으로만 존재할 뿐, 객체를 생성하는 게 아니다.
+        //"구현하는 클래스 없이 선언과 동시에 바로 객체를 생성하겠다."
+        //클래스지만, 이름이 없는 클래스.
+        //[애매모호하고 어려운 개념]
+        
+        
+        //MyInter 타입의 객체를 선언한다. 동시에 new를 사용하여 객체를 생성한다.
+        new MyInter() {
+            
+            @Override
+            public void prn() {
+                System.out.println("익명 클래스");
+            }
+        }.prn();//.prn();은 당장 실행을 위해 호출한 거고 큰 의미는 없다.
+
+    }
+
+}
+```
+
+```jsx
+package ch05_1;
+
+//인터페이스를 선언합니다.
+interface MyInter{
+    void prn();
+}
+
+public class AnonymousEx1 {
+
+    public static void main(String[] args) {
+        //인터페이스는 타입으로만 존재할 뿐, 객체를 생성하는 게 아니다.
+        //"구현하는 클래스 없이 선언과 동시에 바로 객체를 생성하겠다."
+        //클래스지만, 이름이 없는 클래스.
+        //[애매모호하고 어려운 개념]
+        
+        
+        //MyInter 타입의 객체를 선언한다. 동시에 new를 사용하여 객체를 생성한다.
+        new MyInter() {
+            
+            @Override
+            public void prn() {
+                System.out.println("익명 클래스");
+            }
+        }.prn();//.prn();은 당장 실행을 위해 호출한 거고 큰 의미는 없다.
+
+    }
+
+}
+```
+
+
+
