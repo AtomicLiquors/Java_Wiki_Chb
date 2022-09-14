@@ -7,7 +7,13 @@ LinkedList는 데이터부분과 주소부분으로 나뉘어져,
 
 &nbsp;  
 
+### 유형 :
+**Singly LinkedList**
 ![https://blog.kakaocdn.net/dn/bygm8v/btq5lxMb2f7/UookpU9dnl1uKNZs6i4Bu0/img.png](https://blog.kakaocdn.net/dn/bygm8v/btq5lxMb2f7/UookpU9dnl1uKNZs6i4Bu0/img.png)
+
+&nbsp;  
+**Doubly LinkedList**
+![https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/17/screen-shot-2018-04-17-at-161130.png](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/17/screen-shot-2018-04-17-at-161130.png)
 
 
 &nbsp;  
@@ -64,3 +70,16 @@ public class LinkedListDemo {
 	}
 }
 ```
+
+
+### 삽입 : O(1)속도로 삽입하기
+1. 새로운 노드를 선언한다.
+2. 추가할 노드의 "next"field를 다음 노드로 지정한다.
+3. 이전 노드의 "next" 속성을 추가할 노드로 지정한다.
+
+&nbsp;  
+모든 원소를 일일이 뒤로 옮겨줘야 했던 배열 삽입과 달리,   
+${O(1)}만에 새 노드를 삽입해 줄 수 있다.
+
+
+&nbsp;  
