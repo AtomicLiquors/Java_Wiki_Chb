@@ -1,6 +1,6 @@
 
 
-## JAVA Wiki by AtomicLiquors  
+## JAVA_
 - [주석 및 편의기능](https://github.com/AtomicLiquors/Java_Wiki_Chb/tree/main/0.%EC%A3%BC%EC%84%9D%20%EB%B0%8F%20%ED%8E%B8%EC%9D%98%EA%B8%B0%EB%8A%A5)
 - [상식](https://github.com/AtomicLiquors/Java_Wiki_Chb/tree/main/1.%EC%83%81%EC%8B%9D%EA%B3%BC%20%EB%B2%84%EC%A0%84)
 - [자료형](https://github.com/AtomicLiquors/Java_Wiki_Chb/tree/main/A.%EC%9E%90%EB%A3%8C%ED%98%95)
