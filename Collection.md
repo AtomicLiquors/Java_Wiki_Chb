@@ -1,5 +1,6 @@
 https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Java#jvm-%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-gc-%EC%9D%98-%EC%9B%90%EB%A6%AC
-컬렉션 : 가변적인 저장소
+# 컬렉션 
+가변적인 저장소 
 
 요소(element, 가변 개수의 객체)의 저장소.
 - 배열과 다르게 객체를 보관하기 위한 공간을 미리 정하지 않아도 된다.  
