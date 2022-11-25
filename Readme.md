@@ -7,7 +7,7 @@
 
 
 &nbsp;  
-## Q. 자바의 특징이 무엇인가요?
+## Q. [자바의 특징이 무엇인가요?](https://github.com/AtomicLiquors/Java_Wiki_Chb/blob/7fa3f5c88d07535237f15f99203ba2710a872b34/1.%EC%83%81%EC%8B%9D%EA%B3%BC%20%EB%B2%84%EC%A0%84/0-0.%EA%B0%9C%EC%9A%94%5BJava%EC%9D%98%20%ED%8A%B9%EC%84%B1%5D.md)
 - [객체지향형 언어](https://github.com/AtomicLiquors/Java_Wiki_Chb/tree/main/G.%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EA%B3%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4)
 - 자동 메모리 관리 - 가비지 컬렉터
 - 멀티쓰레드 지원
