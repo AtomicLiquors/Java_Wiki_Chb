@@ -4,9 +4,16 @@
 - [주석 및 편의기능](https://github.com/AtomicLiquors/Java_Wiki_Chb/tree/main/0.%EC%A3%BC%EC%84%9D%20%EB%B0%8F%20%ED%8E%B8%EC%9D%98%EA%B8%B0%EB%8A%A5)
 - [상식](https://github.com/AtomicLiquors/Java_Wiki_Chb/tree/main/1.%EC%83%81%EC%8B%9D%EA%B3%BC%20%EB%B2%84%EC%A0%84)
 - [자료형](https://github.com/AtomicLiquors/Java_Wiki_Chb/tree/main/A.%EC%9E%90%EB%A3%8C%ED%98%95)
-- [객체지향](https://github.com/AtomicLiquors/Java_Wiki_Chb/tree/main/G.%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EA%B3%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4)
 
 
+&nbsp;  
+## Q. 자바의 특징이 무엇인가요?
+- [객체지향형 언어](https://github.com/AtomicLiquors/Java_Wiki_Chb/tree/main/G.%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EA%B3%BC%20%ED%81%B4%EB%9E%98%EC%8A%A4)
+- 자동 메모리 관리 - 가비지 컬렉터
+- 멀티쓰레드 지원
+- 풍부한 라이브러리를 제공, 쉬운 개발
+
+&nbsp;  
 
 ### 모델 :
 - [김남윤(Cheese10Yun)님의 TIL 저장소](https://github.com/cheese10yun/TIL)
