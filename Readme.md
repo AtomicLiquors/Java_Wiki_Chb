@@ -77,6 +77,8 @@ ___
 
 
 
-모니터링하는 경험을 가져볼것!
-"저 스카우터 써 봤습니다. 문제를 덤프 분석해서 해결했고 또 이런 일 생길까봐 모니터링 체계도 구축했어요!" -- 경력자지 이 정도면!
+모니터링하는 경험을 가져볼것!  
+"저 스카우터 써 봤습니다. 문제를 덤프 분석해서 해결했고 또 이런 일 생길까봐 모니터링 체계도 구축했어요!"   
+-- 이 정도 수준이면 거의 경력자죠.  
+
 https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazMwWnBPd2xMMWtWRXpfWGctNGxSNEhJQmpsZ3xBQ3Jtc0trbndjRmNYWGRHUVNtU3BkVkRoc3FBakVEcGNKaHJONWVBenZ4VVc2Zjhid1ZleDZLREtRdVkydWhHV2JOWjRoR0xNZ2Jyc2xIVEg2NU10Ql9yZ1JjNXRfYVFGS0UyN19xUTdnQVJ4SlRpeG1TR3J1MA&q=https%3A%2F%2Fgithub.com%2Fscouter-project%2Fscouter%2Fblob%2Fmaster%2FREADME_kr.md&v=v1gb397uFC4
