@@ -4,6 +4,7 @@ https://docs.oracle.com/javase/8/docs/technotes/guides/jar/jar.html
 &nbsp;  
 
 # JAR
+*Java Archive*
 META-INF 디렉토리를 포함할 수 있는 zip 파일. 
 
 &nbsp;  
