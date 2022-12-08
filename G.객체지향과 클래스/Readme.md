@@ -30,7 +30,7 @@ Q. 생성자 > this > super > 상속 개념을 연관지어 설명하시오.
 
 
 
-memo 
+[memo]   
 매개변수로 넘기는 값이 기본형이냐, 참조형이냐?  
 기본형 값이 전달될 때를... call by value 
 참조형 값이 전달될 때를... call by reference라고 한다.  
