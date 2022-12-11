@@ -19,15 +19,15 @@ HTML 변경시 Servlet을 재컴파일해야 하는 단점이 있다.
 
  
 
-[Servlet 동작 방식]
+### [Servlet 동작 방식]
 
-클라이언트가 URL을 입력하면 HTTP Request를 Servlet Container로 전송한다.
-HTTP Request를 전송받은 Servlet Container는 HttpServletRequest, HttpServletResponse 두 객체를 생성한다.
-web.xml은 사용자가 요청한 URL을 분석하여 어느 서블릿에 대한 요청을 한 것인지 찾는다.
-web module 3.0 이상부터는 URL 매핑을 Annotation으로 대체 가능
-찾은 서블릿에서 service() 메소드를 호출한 후 클라이언트의 POST, GET 여부에 따라 doGet() 또는 doPost() 메소드를 호출한다.
-doGet()나 doPost() 메소드는 동적 페이지를 생성한 후 HttpServletResponse 객체에 응답을 보낸다.
-응답이 끝나면 HttpServletRequest, HttpServletResponse 두 객체를 소멸시킨다.
+- 클라이언트가 URL을 입력하면 HTTP Request를 Servlet Container로 전송한다.
+- HTTP Request를 전송받은 Servlet Container는 HttpServletRequest, HttpServletResponse 두 객체를 생성한다.
+- web.xml은 사용자가 요청한 URL을 분석하여 어느 서블릿에 대한 요청을 한 것인지 찾는다.
+- web module 3.0 이상부터는 URL 매핑을 Annotation으로 대체 가능
+- 찾은 서블릿에서 service() 메소드를 호출한 후 클라이언트의 POST, GET 여부에 따라 doGet() 또는 doPost() 메소드를 호출한다.
+- doGet()나 doPost() 메소드는 동적 페이지를 생성한 후 HttpServletResponse 객체에 응답을 보낸다.
+- 응답이 끝나면 HttpServletRequest, HttpServletResponse 두 객체를 소멸시킨다.
  
 
 ## Servlet Container
