@@ -18,8 +18,8 @@
  - 8가지 종류가 해당한다. 
     - 논리형 : boolean
     - 문자형 : char 
-    - 실수형 : byte, short, int, long, 
-    - float, double. 
+    - 정수형 : byte, short, int, long, 
+    - 실수형 : float, double. 
     &nbsp;  
 #### 참조형 *Reference Type*
   - 어떤 데이터가 저장된 주소를 값으로 갖는다.
@@ -64,6 +64,13 @@ A. 사실 타입이 자료형보다 넓은 의미기 때문에 굳이 구분하�
 &nbsp;  
 &nbsp;  
 
+
+### 기술질문
+
+Q. 다음 연산의 결과와 그 이유 
+```java
+System.out.println('A'!="A");
+```
 
 Q. '.'을 붙여서 계속해서 객체 참조를 한다.
 오버헤드가 있을까? 없을까?
@@ -136,6 +143,8 @@ i = 10, j = 11
 ```
 p : 정지훈, p2 : 정지훈
 ```
+
+왜 그렇게 되는지 명료하게 설명이 안 돼.
 
 
 
