@@ -19,7 +19,7 @@
     - 논리형 : boolean
     - 문자형 : char 
     - 정수형 : byte, short, int, long, 
-    - 실수형 : float, double. 
+    - 실수형 : float(4byte), double(8byte). 
     &nbsp;  
 #### 참조형 *Reference Type*
   - 어떤 데이터가 저장된 주소를 값으로 갖는다.
@@ -150,3 +150,8 @@ p : 정지훈, p2 : 정지훈
 
 &nbsp;  
 
+
+
+Q. 실수 두 개를 비교해봤다. 분명히 같은 값 같은데 동등비교가 false가 뜨는 이유는?  
+
+Q. 실수 연산에 오버헤드가 많은 이유?  
