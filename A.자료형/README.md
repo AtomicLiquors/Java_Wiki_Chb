@@ -84,3 +84,59 @@ A. 해시코드잖아.
 정확히는 클래스 이름에 해시코드가 결합한 것.  
 서로 다른 객체라도 같은 해시코드가 나올 수 있다.  
 진짜 주소라면 서로 다른 객체일 때 다른 값이 나와야지.
+
+
+
+
+
+
+### Q. 다음 두 가지 경우 출력 결과는 각각 어떻게 될까?
+```java
+int i = 10; 
+int j = i;
+j = j + 1;
+
+// i와 j의 값은?
+```
+
+
+```java
+
+class Person {
+	
+	public Person(String name) {
+		this.name = name;
+	}
+	
+	String name;
+}
+
+
+public class HelloTest {
+
+	public static void main(String[] args) {
+		Person p = new Person("김태희");
+		Person p2 = p;
+		p2.name = "정지훈";
+		
+		System.out.println(p.name);
+		System.out.println(p2.name);
+	
+	}
+}
+
+```
+
+&nbsp;  
+
+```
+i = 10, j = 11
+```
+
+```
+p : 정지훈, p2 : 정지훈
+```
+
+
+
+&nbsp;  
